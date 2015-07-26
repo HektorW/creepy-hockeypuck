@@ -1,0 +1,21 @@
+{
+  "name": "Shut",
+  "version": "0.0.0",
+  "dependencies": {
+    "webpack": "~1.10.1",
+    "babel-loader": "~5.3.1",
+    "three": "~0.71.0",
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "~1.10.1"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "scripts": {
+    "install": "git submodule init && git submodule update",
+    "dev": "webpack-dev-server --progress --colors --content-base src/",
+    "build": "webpack"
+  }
+}
